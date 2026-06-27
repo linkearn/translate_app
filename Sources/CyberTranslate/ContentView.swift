@@ -172,7 +172,7 @@ struct ContentView: View {
             HStack(spacing: 6) {
                 Circle().fill(state.autoCapture ? Cyber.green : Cyber.dim)
                     .frame(width: 7, height: 7)
-                Text(state.autoCapture ? "AUTO-CAPTURE ON" : "⌥⌘C で取込")
+                Text(state.autoCapture ? "AUTO-CAPTURE ON" : "⌃⌥T で取込")
                     .font(.system(size: 10, design: .monospaced))
                     .foregroundStyle(state.autoCapture ? Cyber.green : Cyber.dim)
             }

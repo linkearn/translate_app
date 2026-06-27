@@ -79,7 +79,7 @@ struct SettingsView: View {
                         Image(systemName: axTrusted ? "checkmark.circle.fill" : "exclamationmark.triangle.fill")
                             .foregroundStyle(axTrusted ? Cyber.green : Cyber.amber)
                         Text(axTrusted
-                             ? "アクセシビリティ許可済み（⌥⌘Cで選択範囲を自動コピー）"
+                             ? "アクセシビリティ許可済み（⌃⌥Tで選択範囲を自動コピー）"
                              : "選択範囲の自動コピーには「アクセシビリティ」許可が必要")
                             .font(.system(size: 11, design: .monospaced))
                             .foregroundStyle(axTrusted ? Cyber.green : Cyber.amber)
@@ -92,7 +92,7 @@ struct SettingsView: View {
                             }
                         }.buttonStyle(GhostButtonStyle(tint: Cyber.amber))
                     }
-                    Text("グローバルショートカット: ⌥⌘C（他アプリで文字選択中に押すと取り込み→翻訳）")
+                    Text("グローバルショートカット: ⌃⌥T（他アプリで文字選択中に押すと取り込み→翻訳）")
                         .font(.system(size: 10, design: .monospaced)).foregroundStyle(Cyber.dim)
                 }
 

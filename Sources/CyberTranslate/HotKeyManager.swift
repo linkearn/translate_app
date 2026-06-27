@@ -15,8 +15,8 @@ final class HotKeyManager {
     /// Called on the main thread with the captured text.
     var onCapture: ((String) -> Void)?
 
-    func register(keyCode: UInt32 = UInt32(kVK_ANSI_C),
-                  modifiers: UInt32 = UInt32(cmdKey | optionKey)) {
+    func register(keyCode: UInt32 = UInt32(kVK_ANSI_T),
+                  modifiers: UInt32 = UInt32(controlKey | optionKey)) {
         unregister()
 
         var eventType = EventTypeSpec(eventClass: OSType(kEventClassKeyboard),
